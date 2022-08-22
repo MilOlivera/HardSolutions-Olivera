@@ -252,13 +252,13 @@ export default function NavBar() {
           </Popover.Group>
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
             <a href="#" className="text-base font-medium text-gray-500 whitespace-nowrap hover:text-gray-900">
-              Sign in
+              Registrarse
             </a>
             <a
               href="#"
-              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm whitespace-nowrap hover:bg-indigo-700"
+              className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white bg-gray-600 border border-transparent rounded-md shadow-sm whitespace-nowrap hover:bg-gray-700"
             >
-              Sign up
+              Iniciar Sesion
             </a>
             {/* <a
               href="#"
@@ -270,7 +270,7 @@ export default function NavBar() {
         </div>
       </div>
 
-      <Transition
+      {/* <Transition
         as={Fragment}
         enter="duration-200 ease-out"
         enterFrom="opacity-0 scale-95"
@@ -336,19 +336,19 @@ export default function NavBar() {
                   href="#"
                   className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-gray-600 border border-transparent rounded-md shadow-sm hover:bg-gray-700"
                 >
-                  Sign up
+                  Ingresar
                 </a>
                 <p className="mt-6 text-base font-medium text-center text-gray-500">
                   Existing customer?{' '}
                   <a href="#" className="text-gray-600 hover:text-gray-500">
-                    Sign in
+                    Registrarse
                   </a>
                 </p>
               </div>
             </div>
           </div>
         </Popover.Panel>
-      </Transition>
+      </Transition> */}
     </Popover>
   )
 }
