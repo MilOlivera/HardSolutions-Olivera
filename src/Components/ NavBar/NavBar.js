@@ -1,5 +1,6 @@
 import React from "react"
-import Styles from "../Assets/css/Styles.css"
+import NavBarCss from "../../Assets/css/NavBar.css"
+import CartWidget from "./CartWidget"
 
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
@@ -95,8 +96,8 @@ export default function NavBar() {
                 src="../Assets/images/hardSolutions.png"
                 alt=""
               /> */}
-              <i class="ri-computer-line" id="logoNavBar"></i>
-              <p class="logoTitulo">Hard Solutions</p>
+              <i className="ri-computer-line" id="logoNavBar"></i>
+              <p className="logoTitulo">Hard Solutions</p>
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
@@ -196,7 +197,9 @@ export default function NavBar() {
                       aria-hidden="true"
                     /> */}
                   </Popover.Button>
-
+                 
+                    
+          
                   {/* <Transition
                     as={Fragment}
                     enter="transition ease-out duration-200"
@@ -251,14 +254,18 @@ export default function NavBar() {
             </Popover>
           </Popover.Group>
           <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
-            <a href="#" className="text-base font-medium text-gray-500 whitespace-nowrap hover:text-gray-900">
-              Registrarse
-            </a>
             <a
               href="#"
               className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white bg-gray-600 border border-transparent rounded-md shadow-sm whitespace-nowrap hover:bg-gray-700"
             >
               Iniciar Sesion
+            </a>
+        
+            {/* <a href="#" className="text-base font-medium text-gray-500 whitespace-nowrap hover:text-gray-900">
+              Registrarse
+            </a> */}
+            <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900" id="divCart">
+              <CartWidget />
             </a>
             {/* <a
               href="#"
