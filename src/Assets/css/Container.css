@@ -18,3 +18,40 @@
     animation: animate 3s infinite alternate;    
 
 }
+
+.contadorCarrito{
+    color: white;
+}
+
+.btnCarrito{
+    padding: 3px;
+    border-radius: 70%;
+    margin: 30px;
+    box-shadow: 0 0 0 2px white;
+}
+.btnCarrito:hover{
+    background-color: white;
+    transition: all 0.4s;
+}
+
+.btnCarrito i{
+    font-size: 20px;
+    color: white;
+}
+
+.btnCarrito i:hover{
+    color: black;
+}
+.btnAddCarrito{
+    padding: 15px;
+    box-shadow: 0 0 0 2px white;
+    color: white;
+    border-radius: 20px;
+}
+.btnAddCarrito:hover{
+    padding: 15px;
+    box-shadow: 0 0 0 2px white;
+    background-color: white;
+    color: black;
+    transition: all 0.7s;
+}
