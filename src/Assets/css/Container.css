@@ -9,25 +9,28 @@
     font-size: 60px;
     text-align: center;
     text-shadow: 0 0 0 transparent,
-                0 0 10px #ff003c,
-                0 0 20px rgba(255, 0, 60, 0.5),
-                0 0 40px #ff003c,
-                0 0 100px #ff003c,
-                0 0 200px #ff003c,
-                0 0 300px #ff003c;
+                0 0 10px #c5c6c8,
+                0 0 20px rgb(94,95,97),
+                0 0 40px #c5c6c8,
+                0 0 100px #c5c6c8,
+                0 0 200px #c5c6c8,
+                0 0 300px #c5c6c8;
     animation: animate 3s infinite alternate;    
-
 }
-
+.contenedorContador{
+    background-color: #c5c6c8;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 .contadorCarrito{
-    color: white;
+    padding: 10px;
+    margin-left: 25%;
+    text-transform: uppercase;
 }
 
 .btnCarrito{
-    padding: 3px;
-    border-radius: 70%;
-    margin: 30px;
-    box-shadow: 0 0 0 2px white;
+    padding: 10px;
 }
 .btnCarrito:hover{
     background-color: white;
@@ -36,22 +39,14 @@
 
 .btnCarrito i{
     font-size: 20px;
-    color: white;
 }
 
-.btnCarrito i:hover{
-    color: black;
-}
 .btnAddCarrito{
-    padding: 15px;
-    box-shadow: 0 0 0 2px white;
-    color: white;
-    border-radius: 20px;
+   padding: 10px;
+   text-transform: uppercase;
 }
-.btnAddCarrito:hover{
-    padding: 15px;
-    box-shadow: 0 0 0 2px white;
-    background-color: white;
-    color: black;
-    transition: all 0.7s;
+.contenedorAddCarrito:hover{
+   background-color: #b5b6b9;
+   border-bottom-left-radius: 10px ;
+   border-bottom-right-radius: 10px ;
 }

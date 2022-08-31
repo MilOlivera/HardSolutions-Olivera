@@ -18,15 +18,18 @@ const ItemCountContainer = ({initial, stock, onAdd}) => {
     }, [initial])
     return(
         <div>
-            <h4 className="contadorCarrito">Contidad de productos: {carrito}</h4>
+            <div className="contenedorContador">
+            <h4 className="contadorCarrito">Cantidad: {carrito}</h4>
             <button disabled={carrito <= 1} className="btnCarrito" onClick={decrementar}>
                 <i className="ri-subtract-line"></i>
             </button>
             <button disabled={carrito >= stock} className="btnCarrito" onClick={incrementar}>
                 <i className="ri-add-line"></i>
             </button>
-            <div>
-                <button className="btnAddCarrito" disabled={stock <= 0} onClick={ () => onAdd(carrito, alert('PRODUCTO AGREGADO CORRECTAMENTE'))}>Agregar al carrito</button>
+
+            </div>
+            <div className="contenedorAddCarrito">
+                <button className="btnAddCarrito" disabled={stock <= 0} onClick={ () => onAdd(carrito, alert(`AGREGASTE ${carrito} PRODUCTOS CORRECTAMENTE`))}>Agregar al carrito</button>
             </div>
         </div>
     )

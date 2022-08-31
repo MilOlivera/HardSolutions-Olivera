@@ -1,0 +1,28 @@
+.divContenedorCards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.cardSection{
+    width: 30%;
+    margin-left: 38%;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 5px #cdccca;
+}
+.cardImg{
+    width: 100%;
+    padding: 10px;
+}
+.cardImg img{
+    margin-left: 20%;
+    padding: 20px;
+}
+.cardPrice{
+    font-size: larger;
+}
+.cardTitle{
+    background-color: #cdccca;
+    width: 100%;
+    padding: 20px;
+}
