@@ -1,12 +1,19 @@
+::-webkit-scrollbar {
+    display: none;
+}
 .divContenedorCards{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+.probando{
+    display: grid;
+    grid-template-columns: 37% 37% 37%;
 }
 .cardSection{
-    width: 30%;
-    margin-left: 38%;
-    margin-top: 40px;
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 40px; 
     border-radius: 10px;
     box-shadow: 0 0 0 5px #cdccca;
 }
@@ -15,7 +22,7 @@
     padding: 10px;
 }
 .cardImg img{
-    margin-left: 20%;
+    margin-left: 8%;
     padding: 20px;
 }
 .cardPrice{
@@ -25,4 +32,6 @@
     background-color: #cdccca;
     width: 100%;
     padding: 20px;
+    font-size: xx-small;
+    height: 70px;
 }

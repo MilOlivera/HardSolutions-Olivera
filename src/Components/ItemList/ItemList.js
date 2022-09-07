@@ -25,23 +25,29 @@ const ItemList = () => {
     }, [])
 
     return(
-        <div>
-        {productos.map((product) => {
+        <div className='probando'>
+        {productos.slice(0,9).map((product) => {
 
         return(
             <div>
 
               <div className="cardSection">
+                
                 <div className="cardImg">
                   <img src={product.thumbnail} height={200} width={250}/>
                   <p className="cardPrice">$ {product.price}</p>
                 </div>
+                
                 <div className="cardTitle">
                   <h4>{product.title}</h4>
                 </div>
+                
+                <div>
                 <ItemCountContainer initial={1} stock={10} onAdd={onAdd}/>
-              </div>
-              </div>
+                </div>
+              </div>  
+
+            </div>
         )
 
         })}
