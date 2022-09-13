@@ -44,7 +44,9 @@ const ItemList = () => {
               <div className="cardSection">
                 
                 <div className="cardImg">
-                  <img src={product.thumbnail} height={200} width={250}/>
+                  <a href='/item/1'>
+                    <img src={product.thumbnail} height={200} width={250}/>
+                  </a>
                   <p className="cardPrice">$ {product.price}</p>
                 </div>
                 
