@@ -1,10 +1,12 @@
 import React, {useState, useEffect} from "react";
 import ItemDetailCss from "../../Assets/css/ItemDetail.css"
+import {Link, BrowserRouter, Route, Routes, useParams} from 'react-router-dom'
 
 const ItemDetail = () => {
 
     const [detalleProductos, setDetalleProducto] = useState([])
-    
+
+
     const buscarDetalleProductos = async() => {
 
         try{

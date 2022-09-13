@@ -17,7 +17,7 @@ const ItemDetailContainer = ({greeting, color}) => {
 
             <div className='divContenedorCards'>
                {/* <ItemCountContainer initial={1} stock={10} onAdd={onAdd}/> */}
-               <ItemDetail />
+                <ItemDetail />
             </div>
         
         </div>

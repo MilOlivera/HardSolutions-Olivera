@@ -1,18 +1,28 @@
 import React, {useState, useEffect} from "react";
 import ItemListCss from "../../Assets/css/ItemList.css"
 import ItemCountContainer from "../Count/ItemCountContainer";
+import { useParams } from "react-router-dom";
 
 const ItemList = () => {
 
-   const onAdd = (cantidad) => {
+  const onAdd = (cantidad) => {
       console.log(`Compraste ${cantidad} unidades`)
   }
+
+  const {nombreCategoria} = useParams()
+
+  const URL = nombreCategoria ? `https://api.mercadolibre.com/sites/MLA/search?q=${nombreCategoria}` : 'https://api.mercadolibre.com/sites/MLA/search?q=notebook';
+
     const [productos, setProductos] = useState([])
     
+    // const prueba = fetch('https://fakestoreapi.com/products')
+    // .then(res=>res.json())
+    // .then(json=>console.log(json))
+
     const buscarProductos = async() => {
 
         try{
-            const response = await fetch('https://api.mercadolibre.com/sites/MLA/search?q=notebook', {setTimeout: 2000})
+            const response = await fetch(URL, {setTimeout: 2000})
             const data = await response.json()
             setProductos(data.results)
         }
