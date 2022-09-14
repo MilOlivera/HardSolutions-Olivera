@@ -1,19 +1,24 @@
 import React, {useState, useEffect} from "react";
 import ItemDetailCss from "../../Assets/css/ItemDetail.css"
+import ItemCountContainer from "../Count/ItemCountContainer";
 import {Link, BrowserRouter, Route, Routes, useParams} from 'react-router-dom'
 
 const ItemDetail = () => {
 
     const [detalleProductos, setDetalleProducto] = useState([])
 
+    
+    // const {detalleId} = useParams()
+    // console.log(detalleId, 'detalle id')
 
     const buscarDetalleProductos = async() => {
 
         try{
-            const response = await fetch('https://api.mercadolibre.com/sites/MLA/search?q=Notebook Lenovo Ideapad 14iil05  Platinum Gray 14 , Intel Core I5 1035g1  8gb De Ram 512gb Ssd, Intel Uhd Graphics G1 1920x1080px Windows 10 Home', {setTimeout: 2000})
+            // const response = await fetch(`https://api.mercadolibre.com/items?ids=${detalleId}`, {setTimeout: 2000})
+            const response = await fetch('https://api.mercadolibre.com/sites/MLA/search?q=Notebook Asus Vivobook E410ma Azul Eléctrico 14 , Intel Celeron N4020 4gb De Ram 128gb Ssd, Intel Uhd Graphics 600 60 Hz 1366x768px Windows 10 Home', {setTimeout: 2000})
             const data = await response.json()
             setDetalleProducto(data.results)
-            console.log(data.results)
+            console.log(data.results, 'detalle del producto')
         }
         catch(error){
             console.log(error)

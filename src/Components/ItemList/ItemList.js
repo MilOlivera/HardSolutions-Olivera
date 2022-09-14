@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
 import ItemListCss from "../../Assets/css/ItemList.css"
-import ItemCountContainer from "../Count/ItemCountContainer";
-import { useParams } from "react-router-dom";
+import {Link, Route, Routes, BrowserRouter, useParams} from 'react-router-dom'
+import ItemDetailContainer from "../ItemDetailContainer";
+
 
 const ItemList = () => {
 
@@ -10,6 +11,7 @@ const ItemList = () => {
   }
 
   const {nombreCategoria} = useParams()
+ 
 
   const URL = nombreCategoria ? `https://api.mercadolibre.com/sites/MLA/search?q=${nombreCategoria}` : 'https://api.mercadolibre.com/sites/MLA/search?q=notebook';
 
@@ -54,16 +56,17 @@ const ItemList = () => {
                   <h4>{product.title}</h4>
                 </div>
                 
-                <div>
-                <ItemCountContainer initial={1} stock={10} onAdd={onAdd}/>
+              <Link to={`/item/${product.id}`}>
+                <div className="cardTitle">
+                  <button>Ver Detalle</button>
                 </div>
+              </Link>
               </div>  
-
             </div>
         )
 
         })}
-            
+
         </div>
     )
 }

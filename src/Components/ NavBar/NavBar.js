@@ -66,7 +66,8 @@ export default function NavBar() {
                     )}
                   >
                      
-                    <span>Notebooks</span></a>
+                    <span>Notebooks</span>
+                    </a>
                     
                   
                   
@@ -93,7 +94,8 @@ export default function NavBar() {
                       'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                     )}
                   >
-                    <span>Software</span></a>
+                    <span>Software</span>
+                    </a>
                   
                   
                  

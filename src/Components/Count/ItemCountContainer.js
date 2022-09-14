@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+
 // import ItemCount from "./ItemCount";
 import 'remixicon/fonts/remixicon.css'
 
@@ -28,6 +29,7 @@ const ItemCountContainer = ({initial, stock, onAdd}) => {
             </button>
 
             </div>
+           
             <div className="contenedorAddCarrito">
                 <button className="btnAddCarrito" disabled={stock <= 0} onClick={ () => onAdd(carrito, alert(`AGREGASTE ${carrito} PRODUCTOS CORRECTAMENTE`))}>Agregar al carrito</button>
             </div>

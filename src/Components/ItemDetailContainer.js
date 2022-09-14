@@ -4,6 +4,7 @@ import Container from '../Assets/css/Container.css'
 import ItemDetail from './itemDetail/ItemDetail'
 
 
+
 const ItemDetailContainer = ({greeting, color}) => {
     
     // const onAdd = (cantidad) => {
